@@ -1,0 +1,115 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  margin: 100px auto 0;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Small Screen*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Mediume Screen  */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Larger Screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.select-choices {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 400px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  border-radius: 10px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-choices p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.select-choices i {
+  transition: 0.5s linear;
+}
+.social-media {
+  width: 400px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  transition: 0.5s linear;
+  transform-origin: top;
+}
+
+.scale {
+  transform: scaleY(0);
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.social-media > div {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.social-media > div:hover {
+  background-color: white;
+}
+
+.social-media > div img {
+  margin-right: 18px;
+}
+
+.social-media > div p {
+  text-transform: capitalize;
+  font-weight: 700;
+}
